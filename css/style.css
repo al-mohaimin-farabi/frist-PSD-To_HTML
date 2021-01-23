@@ -50,12 +50,20 @@ p {
 .main{
 	width: 100%;
 	background:url(../image/Bg.png) right top no-repeat;
-	background-size:inherit;
+	background-size:80% 95% ;
 }
 
 .bg-light {
 	padding: 20px 0px;
 	background: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color:#193164;
+	font-size:20px;
+	font-weight:600;
+	font-height:30px;
+	margin:0px 12px;
 }
 
 .main .nav-item .nav-link {
@@ -65,8 +73,14 @@ p {
 	font-height:28px;
 	margin:0px 12px;
 }
-.main .nav-item .nav-link:hover .main .nav-item .nav-link:focus {
-	color:#000;
+.main .nav-item .nav-link:hover ,.main .nav-item .nav-link:focus {
+	color:#193164;
+	font-size:20px;
+	font-weight:600;
+	font-height:30px;
+	margin:-5px 12px 0px;
+	transition: 0.2s;
+	letter-spacing:2px;
 }
  
 .main .nav-item .btn-info {
@@ -80,8 +94,8 @@ p {
 }
 .main .nav-item .btn-info:hover {
 	transition: 0.3s;
-	color:#fff;
-	font-size: 16px;
+	color:#193164;
+	font-size: 18px;
 	line-height: 26px;
 	border-radius: 35px;
 	padding:10px 30px;
@@ -91,12 +105,12 @@ p {
 }
 .header-banner {
 	width:100%;
-	padding: 150px 0px;
+	padding: 160px 0px;
 
 }
 .header-banner h1 {
-	font-size:62px;
-	line-height: 78px;
+	font-size:55px;
+	line-height: 65px;
 	font-weight: 600;
 	color:#193164;
 
@@ -120,7 +134,7 @@ p {
 	background-image: linear-gradient(to right, #0de8ec 40%, #767bfa  );
 }
 .main .header-banner .btn-info:hover {
-	transition: 0.1s;
+	transition: 0.3s;
 	color:#fff;
 	font-size: 18px;
 	line-height: 28px;
@@ -142,16 +156,14 @@ p {
 
 .content {
 	width: 100%;
-	padding: 80px 0px ;
+	padding: 60px 0px ;
 	background:url(../image/section.png)left top no-repeat;
-	background-size:inherit;
+	background-size:50% 95%;	
 }
-.inner-content {
-	padding: 50px 0px
-}
+
 .content h1 {
-	font-size:62px;
-	line-height: 78px;
+	font-size:55px;
+	line-height:65px;
 	font-weight: 600;
 	color:#193164;
 
@@ -187,7 +199,7 @@ p {
 	padding-bottom: 20px ;
 }
 .servicies .inner-servicies p {
-	font-size:22px;
+	font-size:20px;
 	line-height: 32px;
 	font-weight: 500;
 	color:#767c89;
@@ -269,7 +281,7 @@ p {
 	line-height: 32px;
 }
 .CTA form input{
-	padding: 6px ;
+	padding: 10px ;
 	color:#767c89;
 	font-weight: 500;
 	border:none;
